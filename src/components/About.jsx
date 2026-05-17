@@ -8,5 +8,8 @@ function About({image, about, defaultValue}) {
         </aside>
     );
 }
+function DefaultImage({image}) {
+    return image ? <img src={image} alt="blog logo" /> : <img src="https://via.placeholder.com/215" alt="blog logo" />;
+}
 
 export default About;

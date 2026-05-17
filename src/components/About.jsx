@@ -1,15 +1,12 @@
 import React from 'react';
 
-function About({image, about, defaultValue}) {
+function About({image= "https://via.placeholder.com/215", about,}) {
     return (
         <aside>
-            <img src={image} alt={defaultVaue} />
+            <img src={image} alt= "blog logo" />
             <p>{about}</p>
         </aside>
     );
-}
-function DefaultImage({image}) {
-    return image ? <img src={image} alt="blog logo" /> : <img src="https://via.placeholder.com/215" alt="blog logo" />;
 }
 
 export default About;

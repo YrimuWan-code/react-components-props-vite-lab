@@ -26,7 +26,7 @@ function ArticleList() {
     return (
         <main>
             {blogData.posts.map((posts) => (
-                <Article key={posts.id} title={post.title} date={post.date} preview={post.preview} />
+                <Article key={posts.id} title={posts.title} date={posts.date} preview={posts.preview} />
             ))}
         </main>
     );
